@@ -9,6 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
+        <activity android:name=".SendActivity"/>
+        <activity android:name=".NextActivity"
+            android:label =" My Second Acitivty"
+            android:parentActivityName=".NextActivity">
+            <meta-data
+                android:name="android.support.nextActivity"
+                android:value="com.example.android.MyApplication.nextActivity"/>
+        </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
