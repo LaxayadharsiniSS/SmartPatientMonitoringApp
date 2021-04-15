@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -26,6 +27,17 @@ public class SendActivity extends AppCompatActivity {
         ed = findViewById(R.id.editText);
         headView = findViewById(R.id.text_header);
         rplyView = findViewById(R.id.textView1);
+        Log.d(LOG_CAT,"...........");
+        Log.d(LOG_CAT,"onCreate");
+
+        if(savedInstanceState!=null){
+            boolean isVisible = savedInstanceState.getBoolean("reply_visible");
+            if(isVisible){
+                headView.setVisibility(View.VISIBLE);
+                rplyView.setText(savedInstanceState.getString("reply_text"));
+                rplyView.setVisibility(View.VISIBLE);
+            }
+        }
     }
 
     public void launchNextAcitivity(View view){
@@ -47,11 +59,57 @@ public class SendActivity extends AppCompatActivity {
                 //The Activity class defines the result codes.
                 // The code can be RESULT_OK (the request was successful), RESULT_CANCELED (the user cancelled the operation), or
                 // RESULT_FIRST_USER (for defining your own result codes).
+                assert data != null;
                 String reply = data.getStringExtra(NextActivity.EXTRA_REPLY);
                 headView.setVisibility(View.VISIBLE);
                 rplyView.setVisibility(View.VISIBLE);
                 rplyView.setText(reply);
             }
         }
+    }
+
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        if(headView.getVisibility() == View.VISIBLE){
+            outState.putBoolean("reply_visible",true);
+            outState.putString("reply_text",rplyView.getText().toString());
+        }
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d(LOG_CAT,"onStart");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d(LOG_CAT,"onPause");
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.d(LOG_CAT,"onRestart");
+    }
+
+    @Override
+    protected void onResume(){
+        super.onResume();
+        Log.d(LOG_CAT,"onResume");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d(LOG_CAT,"onStop");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d(LOG_CAT,"onDestroy");
     }
 }

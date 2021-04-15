@@ -4,16 +4,21 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 
 import static android.view.Gravity.apply;
 
 public class MainActivity extends AppCompatActivity {
 
-//    String text;
+    private static final String LOG_CAT = MainActivity.class.getSimpleName();
+
+    //    String text;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Log.d(LOG_CAT,".......");
+        Log.d(LOG_CAT,"onCreate");
         startActivity(new Intent(this, SendActivity.class));
         // Create an italic "hello, " a red "world",
         // and bold the entire sequence.
@@ -98,6 +103,5 @@ public class MainActivity extends AppCompatActivity {
     public static CharSequence color(int color, CharSequence... content) {
         return applyStyles(content, new ForegroundColorSpan[]{new ForegroundColorSpan(color)});
     }*/
-
 
 }
