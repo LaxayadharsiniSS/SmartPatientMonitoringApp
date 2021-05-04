@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.techcroods">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ActivityGenAppointments">
+        </activity>
+        <activity android:name=".ActivityDailyAppointments" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity android:name=".ActivityHome" />
+        <activity android:name=".ActivityCreatePatient" />
+        <activity android:name=".ActivityCreateNurse" />
+        <activity android:name=".ActivityICU"/>
+        <activity android:name=".MainActivity_choose">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivityPatient"/>
+        <activity android:name=".MainActivityNurse"/>
+        <activity android:name=".ActivityUpdateSchedule"/>
+        <activity android:name=".ActivityPatientDetails"/>
+        <activity android:name=".ActivityMoreInfo"/>
+    </application>
+
+</manifest>

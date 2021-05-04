@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#131019"
+    android:layout_height="match_parent"
+    tools:context=".ActivityGenAppointments">
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="152dp"
+            android:layout_height="52dp"
+            android:text="Schedule Events"
+            android:background="#B97EE4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.281"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.209" />
+
+    <LinearLayout
+        android:layout_width="319dp"
+        android:layout_height="361dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.669"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.737"
+        tools:ignore="MissingConstraints">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textView0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#131019"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+        </ScrollView>
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/textView"
+            android:layout_width="326dp"
+            android:layout_height="46dp"
+            android:background="#131019"
+            android:gravity="center_horizontal"
+            android:text="Fix General Appoinments"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="23dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.588"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.084" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

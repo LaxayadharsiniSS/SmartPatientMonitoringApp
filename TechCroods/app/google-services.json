@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "411521931745",
+    "project_id": "techcroods-7f119",
+    "storage_bucket": "techcroods-7f119.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:411521931745:android:172759aab26e67e3549aa0",
+        "android_client_info": {
+          "package_name": "com.example.techcroods"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "411521931745-9hj1c147vs1250h7eorkean5fl11te1i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpOBGwtDX1vnhTHOcky4ETtsIlNJHvxSg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "411521931745-9hj1c147vs1250h7eorkean5fl11te1i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

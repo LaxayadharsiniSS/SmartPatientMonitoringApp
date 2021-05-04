@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Tech Croods</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="aboutContent">Smart Patient Monitoring System developed by TechCroods is a wireless health monitoring system (WHMS) mainly for facilitating better communication between patient and the doctor and intended for the usage in intensive care units (ICUs). We believe that this system will transform health care delivery and management. If you are involved in running a hospital or if you are a care provider, a working person, a senior citizen or a patient at ICU, this system will be useful for easy communication between the patient and the Doctor/Attender/Nurse wherein the patient would feel protected in ICU.
+        <br><br><br></br></br></br>
+        This Mobile Application is an easy to use, flexible, user-friendly and a comfortable system that can be used. It allows the physicians to have access over extra features like scheduling their daily appointments and overall appointments. It works 24×7, measuring and recording patients vital signs continually, accurately and delivers the monitored data of each patients to the respective doctors. When anything unusual or requiring urgent attention is noticed by the system or felt by a patient, the mobile application alerts the stakeholders in various ways immediately and provides actionable data for the clinicians/physicians.
+        <br><br><br></br></br></br>
+        Smart Patient Monitoring System facilitates health screening/spot checking Platform consisting of physical instruments that measures parameters like body temperature, heart rate, respiration rate, sugar level, oxygen level and so on instantly. This is very much helpful in spot checking the patient\'s conditions.</string>
+    <string name="read_about_us">Read about us...</string>
+</resources>

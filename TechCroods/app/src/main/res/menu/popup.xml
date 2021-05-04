@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ws1"
+        android:title="Ward S1">
+        <menu>
+        <item
+            android:id="@+id/p11"
+            android:title="Harish kumar R"/>
+        <item
+            android:id="@id/p21"
+            android:title="Anand N"/></menu>
+    </item>
+    <item
+        android:id="@+id/ws2"
+        android:title="Ward S2">
+        <menu>
+            <item
+                android:id="@+id/p21"
+                android:title="Prathish P"/>
+            <item
+                android:id="@+id/p22"
+                android:title="Aparna shruthi T"/>
+
+            <item
+                android:id="@+id/p23"
+                android:title="John M"/>
+            <item
+                android:id="@+id/p24"
+                android:title="Joy sauce K"/></menu>
+    </item>
+    <item
+        android:id="@+id/ws3"
+        android:title="Ward S3">
+
+        <menu>
+            <item
+                android:id="@+id/p31"
+                android:title="Abhinav kumar L"/>
+            <item
+                android:id="@+id/p32"
+                android:title="Pavithra S"/></menu>
+    </item>
+</menu>

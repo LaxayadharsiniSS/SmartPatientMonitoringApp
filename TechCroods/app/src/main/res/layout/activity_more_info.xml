@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#131019">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:text="@string/read_about_us"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:paddingTop="15dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="367dp"
+            android:layout_height="580dp"
+            android:layout_below="@id/textView1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ScrollView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/scrollView2"
+                tools:ignore="MissingConstraints">
+
+
+
+            <TextView
+                android:layout_width="351dp"
+                android:layout_height="581dp"
+                android:background="#B97EE4"
+                android:padding="40dp"
+                android:text="@string/aboutContent"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+    </ScrollView>
+        </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
